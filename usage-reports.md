@@ -1,4 +1,4 @@
-_this document will always live at (http://bit.ly/loudr-usage-report-specs)_
+_this document will always live at (https://github.com/Loudr/api-specs/blob/master/usage-reports.md)_
 
 # Delivering Usage Reports
 
