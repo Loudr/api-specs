@@ -19,6 +19,7 @@ We will require this information to be **aggregated by these identifying fields*
 - Type of Configuration
 - Date of Fixation/Reproduction
 - Per-Play License Fee
+- Platform/Store of Reproduction (i.e. iTunes)
 - Country of Fixation or Reproduction (i.e. US for now)
 
 As such, in a report you may yield multiple lines for a single piece of content.
@@ -28,8 +29,8 @@ per-play fees, you would generate two lines, grouping the plays by the fields
 mentioned above:
 
 ```json
-{"vendor_id": "my-vendor-id", "license_fee": "0.0054", "units": 6, "date": "2015-05-01", "config": "stream", "country": "US"}
-{"vendor_id": "my-vendor-id", "license_fee": "0.0064", "units": 4, "date": "2015-05-01", "config": "stream", "country": "US"}
+{"vendor_id": "my-vendor-id", "license_fee": "0.0054", "units": 6, "date": "2015-05-01", "config": "stream", "country": "US", "store": "itunes"}
+{"vendor_id": "my-vendor-id", "license_fee": "0.0064", "units": 4, "date": "2015-05-01", "config": "stream", "country": "US", "store": "itunes"}
 ```
 
 
@@ -130,19 +131,35 @@ to your licensed  content. We recommend the `vendor_id`.
         `str`. ISO formatted date "YYYY-MM-DD" of content delivery.
 
 
+    store:
+        `str`. The name of the distribution outlet which serviced this usage.
+        Accepted values are listed below. If you have received royalty revenue from a
+        store we do *not* have listed below, please contact your business representative.
+
+#### Stores
+
+Accepted values for the `store` property are below:
+
+* `itunes`: Apple iTunes / Apple Music
+* `spotify`: Spotify
+* `googlemusic`: Google Music
+* `amazon`: Amazon
+* `deezer`: Deezer
+* `rdio`: Rdio
+
 
 #### Ideal line formatting:
 ```json
-{"vendor_id": "my-vendor-id", "license_fee": "0.0054", "units": 6, "date": "2015-05-01", "config": "stream", "country": "US"}
-{"vendor_id": "my-vendor-id", "license_fee": "0.0064", "units": 4, "date": "2015-05-01", "config": "stream", "country": "US"}
-{"vendor_id": "my-vendor-id", "license_fee": "0.0064", "units": 9, "date": "2015-05-02", "config": "stream", "country": "US"}
+{"vendor_id": "my-vendor-id", "license_fee": "0.0054", "units": 6, "date": "2015-05-01", "config": "stream", "country": "US", "store": "itunes"}
+{"vendor_id": "my-vendor-id", "license_fee": "0.0064", "units": 4, "date": "2015-05-01", "config": "stream", "country": "US", "store": "itunes"}
+{"vendor_id": "my-vendor-id", "license_fee": "0.0064", "units": 9, "date": "2015-05-02", "config": "stream", "country": "US", "store": "itunes"}
 ```
 
 #### OK line formatting:
 ```json
-[{"vendor_id": "my-vendor-id", "license_fee": "0.0054", "units": 6, "date": "2015-05-01", "config": "stream", "country": "US"},
-{"vendor_id": "my-vendor-id", "license_fee": "0.0064", "units": 4, "date": "2015-05-01", "config": "stream", "country": "US"},
-{"vendor_id": "my-vendor-id", "license_fee": "0.0064", "units": 9, "date": "2015-05-02", "config": "stream", "country": "US"}]
+[{"vendor_id": "my-vendor-id", "license_fee": "0.0054", "units": 6, "date": "2015-05-01", "config": "stream", "country": "US", "store": "itunes"},
+{"vendor_id": "my-vendor-id", "license_fee": "0.0064", "units": 4, "date": "2015-05-01", "config": "stream", "country": "US", "store": "itunes"},
+{"vendor_id": "my-vendor-id", "license_fee": "0.0064", "units": 9, "date": "2015-05-02", "config": "stream", "country": "US", "store": "itunes"}]
 ```
 
 #### Bad line formatting:
@@ -155,7 +172,8 @@ Do NOT send usage reports in multiple lines, or a single line:
     "units": 6,
     "date": "2015-05-01",
     "config": "stream",
-    "country": "US"
+    "country": "US",
+    "store": "itunes"
   },
   {
     "vendor_id": "my-vendor-id",
@@ -163,7 +181,8 @@ Do NOT send usage reports in multiple lines, or a single line:
     "units": 4,
     "date": "2015-05-01",
     "config": "stream",
-    "country": "US"
+    "country": "US",
+    "store": "itunes"
   },
   {
     "vendor_id": "my-vendor-id",
@@ -171,7 +190,8 @@ Do NOT send usage reports in multiple lines, or a single line:
     "units": 9,
     "date": "2015-05-02",
     "config": "stream",
-    "country": "US"
+    "country": "US",
+    "store": "itunes"
   }
 ]
 ```
