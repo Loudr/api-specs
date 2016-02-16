@@ -313,6 +313,12 @@ In some cases, rejected requests may be resent when more information is gathered
 In other cases, the rejection is considered a *hard rejection*, because we are blocked from obtaining a license.
 In the case of a hard rejection, requests are not eligible to be resubmitted.
 
+The `notes` field may be propogated to end users for more details about
+the rejection, however, _it may not always be populated_, in which cases it may
+be ideal to show the `message` value as well.
+
+Rejection reasons are detailed in [enums.md](enums.md).
+
 ## Query
 
 Send a `GET` request to `/v1/sound_recordings` with the following parameters:
