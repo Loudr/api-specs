@@ -2,7 +2,7 @@ _this document will always live at (https://github.com/Loudr/api-specs/blob/mast
 
 # Making a Request
 
-Send a `POST` request to `/v1/sound_recording/request_license` with a JSON body described by [examples/request-single.json](request-single.json) in this repository.
+Send a `POST` request to `/v1/sound_recording/request_license` with a JSON body described by [request-single.json](examples/request-single.json) in this repository.
 
 ## POST Data
 
@@ -178,7 +178,7 @@ Send previously licensed requests in the same format as above, with the followin
 }
 ```
 
-See a full example: [examples/request-single-previously-licensed.json](request-single-previously-licensed.json).
+See a full example: [request-single-previously-licensed.json](examples/request-single-previously-licensed.json).
 
 ### _secret
 
@@ -390,5 +390,5 @@ Json Object containing:
 
 For large deliveries of bulk requests, you may choose to send them over SFTP or Email.
 
-With a bulk-upload, we'd expect a JSON file with **one line per recording** (See Sending, querying requests are covered in [examples/requests-bulk.json](requests-bulk.json).
+With a bulk-upload, we'd expect a JSON file with **one line per recording** (See Sending, querying requests are covered in [requests-bulk.json](examples/requests-bulk.json).
 You'll be able to send these files securely via email. (You may compress these files before sending).

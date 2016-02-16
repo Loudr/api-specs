@@ -6,7 +6,7 @@ Loudr's Licensing platform operates on a RESTful API, with simple JSON specifica
 
 ## License Requests
 
-Sending and querying requests are covered in https://github.com/Loudr/api-specs/blob/master/requests.md
+Sending and querying requests are covered in [requests.md](requests.md).
 
 ## Usage Reports
 

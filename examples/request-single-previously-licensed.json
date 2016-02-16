@@ -9,7 +9,7 @@
   "licenses": {
     "stream": "continuous"
   },
-  "prior_licenses": {
+  "previous_license": {
     "license_id": "123456789",
     "partner": "Licensing Agent",
     "publisher_ids": ["P1234"],
