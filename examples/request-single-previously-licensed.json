@@ -1,0 +1,17 @@
+{
+  "isrc": "USE7D1300175",
+  "title": "Pa Que Sigan Hable Y Hable",
+  "artist": "Otro Nivel",
+  "length": 213,
+  "album": "Prendiendo El Motor",
+  "label": "Del Records",
+  "upc": "40232035791",
+  "licenses": {
+    "stream": "continuous"
+  },
+  "prior_licenses": {
+    "license_id": "123456789",
+    "partner": "Licensing Agent",
+    "publisher_ids": ["P1234"],
+  }
+}

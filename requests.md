@@ -2,7 +2,7 @@ _this document will always live at (https://github.com/Loudr/api-specs/blob/mast
 
 # Making a Request
 
-Send a `POST` request to `/v1/sound_recording/request_license` with a JSON body described by https://github.com/Loudr/api-specs/blob/master/examples/request-single.json in this repository.
+Send a `POST` request to `/v1/sound_recording/request_license` with a JSON body described by [examples/request-single.json](request-single.json) in this repository.
 
 ## POST Data
 
@@ -103,6 +103,8 @@ To specify licensing for interactive streams with continuous reporting (instead 
     }
 ```
 
+A full list of acceptable types exists in [enums.md](enums.md).
+
 ### Compositions (Songs being Covered - what we're licensing)
 
 Depending on your business agreement with Loudr, you may leave compositions empty if you do not know exactly what has been covered. If you *do* know, it is always better to tell us - as providing this information greatly decreases the amount of time it takes to process and fulfill a license.
@@ -163,6 +165,20 @@ Example::
     "stream": "2015-01-01"
   }
 ```
+
+### Requests which have been previously licensed
+
+Send previously licensed requests in the same format as above, with the following additional information in the `previous_license` object:
+
+```json
+"previous_license": {
+  "license_id": "123456789", /* previous license ID from other partner - REQUIRED */
+  "partner": "Licensing Agent", /* Name of previous partner coordinated with - REQUIRED (Please inquire with us what code to use for your previous partner) */
+  "publisher_ids": ["P1234"], /* List of Previous partners worked with - OPTIONAL */
+}
+```
+
+See a full example: [examples/request-single-previously-licensed.json](request-single-previously-licensed.json).
 
 ### _secret
 
@@ -374,5 +390,5 @@ Json Object containing:
 
 For large deliveries of bulk requests, you may choose to send them over SFTP or Email.
 
-With a bulk-upload, we'd expect a JSON file with **one line per recording** (See Sending, querying requests are covered in https://github.com/Loudr/api-specs/blob/master/examples/requests-bulk.json).
+With a bulk-upload, we'd expect a JSON file with **one line per recording** (See Sending, querying requests are covered in [examples/requests-bulk.json](requests-bulk.json).
 You'll be able to send these files securely via email. (You may compress these files before sending).
