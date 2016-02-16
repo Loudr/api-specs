@@ -374,5 +374,5 @@ Json Object containing:
 
 For large deliveries of bulk requests, you may choose to send them over SFTP or Email.
 
-With a bulk-upload, we'd expect a JSON file with **one line per recording** (See Sending, querying requests are covered in https://github.com/Loudr/api-specs/blob/master/examples/requests-bulk.md).
+With a bulk-upload, we'd expect a JSON file with **one line per recording** (See Sending, querying requests are covered in https://github.com/Loudr/api-specs/blob/master/examples/requests-bulk.json).
 You'll be able to send these files securely via email. (You may compress these files before sending).
