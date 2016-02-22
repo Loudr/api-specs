@@ -13,5 +13,6 @@
     "license_id": "123456789",
     "partner": "Licensing Agent",
     "publisher_ids": ["P1234"],
-  }
+  },
+  "vendor_id": "D90123X000001ABODP"
 }
