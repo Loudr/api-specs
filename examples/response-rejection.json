@@ -1,0 +1,45 @@
+{
+  "_message": null,
+  "_single": "sound_recording",
+  "sound_recording": {
+    "_fb": true,
+    "_js_kind": "Sound_Recording",
+    "_kind": "sound_recording",
+    "_permissions": [
+      "owner"
+    ],
+    "_uri": "sound_recording/creator/7cSdD--USE7D0900003",
+    "album": "El Diablo De Culiacan",
+    "artist": "Atomo",
+    "created_ago": null,
+    "created_at": null,
+    "earliest_clearance_at": null,
+    "is_hard_rejection": false,
+    "isrc": "USE7D0900003",
+    "label": "Del Records",
+    "length": 192,
+    "license_fulfilled": false,
+    "license_fulfilled_at": null,
+    
+    "p_id": "creator/7cSdD--USE7D0900003",
+    "p_key": "agxkZXZ-cmRzY292ZXJyMQsSEFJkU291bmRSZWNvcmRpbmciG2NyZWF0b3IvN2NTZEQtLVVTRTdEMDkwMDAwMww",
+    "partner": "creator/7cSdD",
+    "partner_recording_id": "USE7D0900003",
+    "release_date": null,
+    "title": "5.7",
+    "upc": "705105796444",
+    "updated_at": "2015-06-15T22:37:00.156993",
+    "vendor_album_id": "",
+    "license_status": 4,
+    "license_status_str": "Rejected",
+    "rejection_status_messages": [
+      {
+        "reason": 2,
+        "message": "Provided composition information is insufficient to indentify the underlying musical work(s). Please re-submit with additional underlying information",
+        "notes": null,
+        "is_hard_rejection": false
+      }
+    ]
+  },
+  "status": "OK"
+}
