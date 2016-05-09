@@ -17,6 +17,7 @@ We will require this information to be **aggregated by these identifying fields*
 
 - Vendor ID
 - Type of Configuration
+- Units
 - Date of Fixation/Reproduction
 - Per-Play License Fee
 - Platform/Store of Reproduction (i.e. iTunes)
