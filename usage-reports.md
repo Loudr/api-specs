@@ -142,10 +142,8 @@ to your licensed  content. We recommend the `vendor_id`.
 Accepted values for the `store` property are below:
 
 * `itunes`: Apple iTunes / Apple Music
-* `spotify`: Spotify
 * `googlemusic`: Google Music
 * `amazon`: Amazon
-* `deezer`: Deezer
 * `rdio`: Rdio
 
 
