@@ -396,5 +396,10 @@ Json Object containing:
 
 For large deliveries of bulk requests, you may choose to send them over SFTP or Email.
 
-With a bulk-upload, we'd expect a JSON file with **one line per recording** (See Sending, querying requests are covered in [requests-bulk.json](examples/requests-bulk.json).
-You'll be able to send these files securely via email. (You may compress these files before sending).
+### JSON [preferred method]
+
+With a bulk upload, we expect a JSON file with **one line per recording**. See the example [requests-bulk.json](examples/requests-bulk.json).
+
+### CSV
+
+While we prefer the JSON format, you may also create a CSV to export your requests. See the example [requests-bulk.csv](examples/requests-bulk.csv).
