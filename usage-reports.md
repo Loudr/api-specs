@@ -139,12 +139,13 @@ to your licensed  content. We recommend the `vendor_id`.
 
 #### Stores
 
-Accepted values for the `store` property are below:
+All accepted values for the `store` property are contained in [stores.json](stores.json).
+
+Popular values for the `store` property are:
 
 * `itunes`: Apple iTunes / Apple Music
 * `googlemusic`: Google Music
 * `amazon`: Amazon
-* `rdio`: Rdio
 
 
 #### Ideal line formatting:
