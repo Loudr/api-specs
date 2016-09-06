@@ -4,6 +4,9 @@ _this document will always live at (https://github.com/Loudr/api-specs/blob/mast
 
 Send a `POST` request to `/v1/sound_recording/request_license` with a JSON body described by [request-single.json](examples/request-single.json) in this repository.
 
+You may also send bulk request files. [Click here to learn more](https://github.com/Loudr/api-specs/blob/master/requests.md#sending-bulk-requests).
+
+
 ## POST Data
 
 ### Sample Post Data
