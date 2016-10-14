@@ -7,7 +7,7 @@ The fundamental structures are similar to the [v1 API](https://github.com/Loudr/
 
 ### Request Authentication via Secret
 
-The argument `secret` should contain your client token. 
+The argument `secret` should contain your client token.
 It may be provided in the query string, or in the JSON request data.
 
 **Migrating from v1?** - `_secret` has become `secret`.
@@ -98,6 +98,9 @@ fulfillment_status:
 fulfillment:
     `resource:fulfillment`. Details from the fulfillment record.
 
+royalty_rates:
+    `resource:royalty-rates`. Royalty rates for this request.
+
 is_public_domain:
     `bool`. Has this request been identified as a public domain usage?
 
@@ -135,6 +138,7 @@ Provided metadata about a specific recording.
 
 title:
     `string`. Recording title.
+
 artist:
     `list of string`. Recording artist(s).
 
@@ -173,51 +177,51 @@ provided_research:
 
 ## Provided Research `provided-research`
 
-Provided research, used to help identify works. 
+Provided research, used to help identify works.
 
-composition_index: 
+composition_index:
     `int`. Index of this request. Helps match requests with matched compositions.
     For example, if the a `matched_compositions` resource has `composition_index: 2`,
     it corresponds to the `requests` resource with `composition_index: 2` as well.
 
-title: 
+title:
     `list of string`. Provided composition titles.
 
-artist: 
+artist:
     `list of string`. Original performing artist(s).
 
-composer: 
+composer:
     `list of string`. Original composer(s).
 
-author: 
+author:
     `list of string`. Original author(s) of the song.
     Authors and composers may overlap, if so, they
     only need to be mentioned once.
 
-album: 
+album:
     `list of string`. Original album the song was released on, if any.
 
-source: 
-    `list of string`. Original source material, such as a movie or 
+source:
+    `list of string`. Original source material, such as a movie or
     video game title.
 
-link: 
+link:
     `list of string`. URL to the source material.
 
-iswc: 
+iswc:
     `string`. International Standard Musical Work Code.
-    
-notes: 
+
+notes:
     `string`. Any additional notes to aid composition search.
 
-suggested_composition: 
+suggested_composition:
     `string-uri`. Composition suggested by user as it already exists in Loudr's DB.
 
 
 ## License Config `resource:license-config`
 
 Describes the quantity and configuration of the license request.
-Serialized as an object containing `{license_type: units}`. 
+Serialized as an object containing `{license_type: units}`.
 A units value of -1 represents continuous administration, not fixed quantity.
 
 ```json
@@ -228,6 +232,21 @@ A units value of -1 represents continuous administration, not fixed quantity.
 ```
 
 Requests infinite streaming & digital downloads.
+
+
+## Royalty Rates `resource:royalty-rates`
+
+Describes the royalty rate for each configuration specified by `license_config`.
+Serialized as an object containing `{license_type: royalty_per_unit}`.
+
+The royalty per unit is expressed as a decimal value in USD.
+
+```json
+"royalty_rates": {
+    "stream": "0.01",
+    "dpd": "0.091"
+}
+```
 
 
 ## Fulfillment Status `resource:fulfillment-status`
@@ -297,6 +316,12 @@ composition_index:
     For example, if the a `matched_compositions` resource has `composition_index: 2`,
     it corresponds to the `requests` resource with `composition_index: 2` as well.
 
+author_publisher_pairs:
+    `list of object`. A list of `{"author": author, "publisher": publisher}` objects.
+    The pairs of authors and publishers are not indicative of a relationship
+    between these two entities. Rather, `author_publisher_pairs` is provided as a
+    convenience tool for integrations that require such formatting.
+    The value "Unknown" is used in the absence of any information.
 
 
 # Example Sound Recording
@@ -330,6 +355,12 @@ composition_index:
             "id": 1
           },
           "name": "Laurent Lescarret"
+        }
+      ],
+      "author_publisher_pairs": [
+        {
+          "author": "Laurent Lescarret",
+          "publisher": "Sony/ATV Music Publishing LLC"
         }
       ]
     }
@@ -376,6 +407,9 @@ composition_index:
   "payment_initiated": null,
   "license_config": {
     "stream": -1
+  },
+  "royalty_rates": {
+    "stream": "0.01"
   },
   "uri": "sound_recording/creator/xxx--abc123",
   "renewal_complete": null,
