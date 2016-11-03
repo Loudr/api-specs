@@ -37,6 +37,7 @@ You may also send bulk request files. [Click here to learn more](https://github.
   ],
   "metadata": {
       /* this is a custom object you may use */
+      "publisher": "Optional known publisher if present"
   },
   "licenses": {
     "stream": "continuous",
@@ -148,6 +149,8 @@ _All fields may be a single string or list of strings (except for 'notes' and 'i
         `str`.
         Any additional notes to aid composition search.
         (Only a string).
+
+***Note:** if publisher information is known, it should provided in the `metadata` object at the top level of the request.*
 
 ### Prior Licenses
 
