@@ -1,13 +1,25 @@
 {
-  "isrc": "USE7D1300175",
-  "title": "Pa Que Sigan Hable Y Hable",
-  "artist": "Otro Nivel",
-  "length": 213,
-  "album": "Prendiendo El Motor",
-  "label": "Del Records",
-  "upc": "40232035791",
+  "isrc": "USY281604079",
+  "title": "Timeless Pursuit",
+  "artist": "Amanda Appiarius",
+  "length": 156,
+  "album": "Masquerada: Songs and Shadows",
+  "label": "Josh Whelchel",
+  "upc": "191061946120",
   "licenses": {
     "stream": "continuous"
   },
-  "vendor_id": "D90123X000001ABODP"
+  "compositions": [
+    {
+      "title": "Timeless Pursuit",
+      "artist": "Amanda Appiarius",
+      "author": ["Josh Whelchel", "Amanda Appiarius"],
+      "album": "Masquerada: Songs and Shadows",
+      "source": "Masquerada"
+    }
+  ],
+  "metadata": {
+    "publisher": "Lost Kakapo Songs"
+  },
+  "vendor_id": "ABC000000001"
 }
