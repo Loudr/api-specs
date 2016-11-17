@@ -1,6 +1,7 @@
 # Integration & On-boarding with Loudr
 
 Integration with Loudr occurs multiple phases:
+
 1. Content Match Test
 2. Integration Test
 3. Production Onboarding
@@ -26,6 +27,7 @@ Learn more about the expected values in [requests](requests.md).
 ## 2. Integration Testing
 
 Integration testing occurs in two parts:
+
 a. Content Delivery Integration
 b. Usage Report Integration Test
 
@@ -36,6 +38,7 @@ If you have completed a "Content Match Test," you are technically ready to deliv
 requests to Loudr.
 
 We will want to verify:
+
 * `vendor_id`/`partner_recording_id` uniquely identifies all requests.
 * `length` is provided in the correct format (seconds).
 * `metadata:publisher` is provided if available.
