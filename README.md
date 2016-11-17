@@ -16,3 +16,12 @@ The formatting for usage reports may be found at Sending, querying requests are 
 
 This current API is a private alpha version, and is subject to change.
 All changes will be communicated, and this API version will not be deprecated without sufficient prior notice.
+
+A version 2 is steadily being made available as detailed in [version2.md](version2.md).
+The version 1 API will be not be phased out.
+
+## Integration Guide
+
+When you are ready to begin integrating, see the [integration 1-sheet](integration-1sheet.md).
+
+
