@@ -15,11 +15,11 @@ for a given sample set of requests.
 Loudr expects a data file containing requests in one of the following formats.
 Learn more about the expected values in [requests](requests.md).
 
-* **JSON Format**. 
+* **JSON Format**.
     Our preferred format for all data is JSON. See an example delivery at [requests-bulk.json](examples/requests-bulk.json).
     Please review the [request specification](requests.md) for clarity on fields. See this [single request](examples/request-single.json) for a more detailed example.
 
-* **CSV Format**. 
+* **CSV Format**.
     You may submit a single `CSV` containing requests in the format demonstrated by [requests-bulk.csv](examples/requests-bulk.csv).
     Please review the [request specification](requests.md) for clarity on fields.
 
@@ -60,7 +60,7 @@ Upon successful delivery, we will provide responses which simulate the following
 * Archived (`archived`)
 * Fulfilled via Physical NOI (`physical`)
 * Fulfilled via Digital NOI (`digital`)
-* Fulfilled via Direct NOI (`direct`)
+* Fulfilled via Direct License (`direct`)
 * Fulfilled via Blanket (`blanket`)
 * Medley fulfillment (`medley`)
 
