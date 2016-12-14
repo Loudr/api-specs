@@ -409,3 +409,14 @@ With a bulk upload, we expect a JSON file with **one line per recording**. See t
 ### CSV
 
 While we prefer the JSON format, you may also create a CSV to export your requests. See the example [requests-bulk.csv](examples/requests-bulk.csv).
+Multiple artists and authors should be denoted with the SEMICOLON character, and all fields containing commas may be wrapped in quotes ("). (See request 2 in the above example.)
+As a rule, UPCs are best formatted as strings (and presented in quotes), to prevent modern editors from reading scientific notation.
+
+Example:
+
+    "Here’s a ""quote"" in a field"
+
+will appear as
+
+    Here's a "quote" in a field
+

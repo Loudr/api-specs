@@ -1,2 +1,3 @@
 vendor_id,request title,track artist,album title,length in seconds,isrc,upc,release date YYYY-MM-DD,label,work title (if applicable),work iswc,work author,work original artist,metadata: publisher,configuration
-0001,Africa,Toto,TOTO IV,274,USE830904816,815089016749,1982-04-08,Mobile Fidelty Sound Lab,Africa,,Robin C. Di Maggio,Toto,Universal,DPD
+0001,Africa,Toto,TOTO IV,274,USE830904816,"815089016749",1982-04-08,Mobile Fidelty Sound Lab,Africa,,Robin C. Di Maggio,Toto,Universal,DPD
+0002,"Timeless, Pursuit",Josh Whelchel; Amanda Appiarius,Masquerada: Songs and Shadows,274,USE830901234,"815089016799",1982-04-08,Lost Kakapo Songs,Timeless Pursuit,,,Josh Whelchel; Amanda Appiarius,Lost Kakapo Songs,DPD
