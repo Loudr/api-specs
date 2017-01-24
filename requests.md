@@ -79,6 +79,10 @@ required depending on your business agreement with Loudr.
     licensor:
         `str`.
         Name of the original licensor of content.
+    licenses:
+        `object` Required.
+        Describes the configurations of licenses requested, as well as units.
+        See the "Licenses (Configurations)" section below.
 
 ### Vendor ID, and a note on IDs
 
