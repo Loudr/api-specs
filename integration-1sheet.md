@@ -68,7 +68,7 @@ For most partners, there will be no difference between the method of fulfillment
 `physical`, `digital`, `direct`, and `blanket`. These are here for the record.
 
 Clients will be expected to deliver requests via the v1 API specs detailed in [requests.md](requests.md).
-Clients may query requests according to the v1 specification, or the [version-2 specificaitons](version2.md).
+Clients will query requests according to the [version-2 specificaitons](version2.md).
 
 ### b. Usage Report Integration Test
 
