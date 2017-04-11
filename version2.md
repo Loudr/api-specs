@@ -1,14 +1,14 @@
 To meet the expanding needs of clients, we are developing a RESTful, RAML documented
 version of our API.
 
-The fundamental structures are similar to the [v1 API](https://github.com/Loudr/api-specs/blob/master/requests.md).
+The fundamental structures are similar to the [v1 API](requests.md).
 
-**Submitting Requests is still only available via v1.** [See here.](https://github.com/Loudr/api-specs/blob/master/requests.md#making-a-request)
+**Submitting Requests is still only possible via v1.** [See here.](requests.md#making-a-request)
 
 **Clients may pull sound recordings, using one of the following two strategies**:
 
-* [Query for multiple recordings](https://github.com/Loudr/api-specs/blob/master/version2.md#query-sound-recordings)
-* [Pull an individual recording](https://github.com/Loudr/api-specs/blob/master/version2.md#individual-sound-recording)
+* [Query for multiple recordings](version2.md#query-sound-recordings)
+* [Pull an individual recording](version2.md#individual-sound-recording)
 
 ### Request Authentication via Secret
 
@@ -67,9 +67,9 @@ This path is provided from the queries in `rel["canonical"] == "/api/client/soun
 One or more license requests are embodied in a sound recording.
 Multiple requests for one sound recording via the request structure.
 
-See [Making a Request](https://github.com/Loudr/api-specs/blob/master/requests.md#making-a-request).
+See [Making a Request](requests.md#making-a-request).
 
-**For a full example of a returned sound recording resource, [see the example at the end of this document](https://github.com/Loudr/api-specs/blob/master/version2.md#example-sound-recording).**
+**For a full example of a returned sound recording resource, [see the example at the end of this document](version2.md#example-sound-recording).**
 
 ### uri:
 `string-uri`. URI for the recording.
@@ -127,7 +127,7 @@ additional release restriction being implied.
 `string`. Kind of license request. Should always be `client request`.
 
 ### license_status:
-`int`. One of the [license_status enum values](https://github.com/Loudr/api-specs/blob/master/enums.md#license-statuses).
+`int`. One of the [license_status enum values](enums.md#license-statuses).
 
 ### license_status_str:
 `string`. Status of request in english.
@@ -244,7 +244,7 @@ to accomodate this discovery.
 
 ## Provided Research `provided-research`
 
-Provided research, used to help identify works. (See [resource:request example](https://github.com/Loudr/api-specs/blob/master/version2.md#request-resourcerequest))
+Provided research, used to help identify works. (See [resource:request example](version2.md#request-resourcerequest))
 
 ### composition_index:
 `int`. Index of this request. Helps match requests with matched compositions.
