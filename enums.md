@@ -12,6 +12,7 @@ license_statuses =
     3: "Completed",
     4: "Rejected",
     5: "Pending Expense",
+    6: "Client Fulfillment",
 };
 
 ```
