@@ -1,4 +1,5 @@
-_this document will always live at (requests.md)_
+This document describes how to make requests via the "v1 API" that shipped for early Loudr partners.
+For new integrations, please see Loudr's Web API documentation at https://loudr.fm/api.
 
 # Making a Request
 
