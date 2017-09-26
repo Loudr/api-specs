@@ -1,0 +1,131 @@
+{
+  "client": "creator/XK4WX", 
+  "earliest_clearance_at": null, 
+  "fulfillment": {
+    "completed": true, 
+    "fulfillment_license_ids": [], 
+    "fulfillment_methods": [
+      "direct"
+    ], 
+    "territories": [
+      "US"
+    ], 
+    "uri": "sound_recording/creator/XK4WX--QZ6K41600179-dpd-a/license_usage/active"
+  }, 
+  "fulfillment_status": {
+    "allowed_expense": {
+      "name": "NONE", 
+      "value": 0
+    }, 
+    "license_fulfilled": true, 
+    "license_fulfilled_at": "2017-09-26T22:37:59.681611+00:00", 
+    "maximum_expense": 0
+  }, 
+  "is_hard_rejection": false, 
+  "is_public_domain": false, 
+  "is_rejection": false, 
+  "license_config": {
+    "dpd": -1
+  }, 
+  "license_fulfilled_at": "2017-09-26T22:37:59.681611+00:00", 
+  "license_kind": "client request", 
+  "license_requested_at": "2017-09-26T22:37:59.296104+00:00", 
+  "license_status": 3, 
+  "license_status_str": "Completed", 
+  "licensor": null, 
+  "matched_compositions": [
+    {
+      "_has_session": true, 
+      "_has_user": false, 
+      "alias": [], 
+      "author_names": [
+        "John Williams"
+      ], 
+      "author_publisher_pairs": [
+        {
+          "author": "John Williams", 
+          "publisher": "API Test: Direct"
+        }
+      ], 
+      "authors": [
+        {
+          "ipi": null, 
+          "name": "John Williams", 
+          "role": {
+            "code": "CA", 
+            "id": 1, 
+            "name": "Composer & Author"
+          }
+        }
+      ], 
+      "composition_index": 0, 
+      "display_name": "API Test: Direct", 
+      "id": "_simDirect", 
+      "kind": "composition", 
+      "publishers": [
+        "API Test: Direct"
+      ], 
+      "rel": {
+        "canonical": "/api/composition/_simDirect"
+      }, 
+      "title": "API Test: Direct", 
+      "uri": "composition/_simDirect"
+    }
+  ], 
+  "payment_complete": false, 
+  "payment_initiated": null, 
+  "recording": {
+    "album": "Hero of Time", 
+    "artist": [
+      "Eric Buchholz"
+    ], 
+    "isrc": "QZ6K41600179", 
+    "label": "Materia Collective", 
+    "length": 209, 
+    "licensor": null, 
+    "release_date": "2017-03-09T00:00:00", 
+    "title": "The Legendary Blade", 
+    "upc": null, 
+    "vendor_album_id": null, 
+    "vendor_id": "QZ6K41600179-dpd-a"
+  }, 
+  "rejections": [], 
+  "rel": {
+    "canonical": "/api/client/sound_recording/XK4WX/QZ6K41600179-dpd-a"
+  }, 
+  "renewal_complete": null, 
+  "renewal_failed": null, 
+  "renewal_of": null, 
+  "requests": [
+    {
+      "expense": {
+        "name": "NONE", 
+        "value": 0
+      }, 
+      "provided_research": {
+        "album": [], 
+        "artist": [], 
+        "author": [], 
+        "composer": [
+          "Koji Kando"
+        ], 
+        "composition_index": 0, 
+        "iswc": null, 
+        "link": [], 
+        "notes": null, 
+        "source": [
+          "The Legend of Zelda: Ocarina of Time"
+        ], 
+        "suggested_composition": "", 
+        "title": [
+          "Temple of Time"
+        ]
+      }
+    }
+  ], 
+  "royalty_rates": {
+    "dpd": "0.091"
+  }, 
+  "updated_at": "2017-09-26T22:37:59.684585+00:00", 
+  "uri": "sound_recording/creator/XK4WX--QZ6K41600179-dpd-a"
+}
