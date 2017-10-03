@@ -1,9 +1,15 @@
+**Loudr's partner integration documentation has moved to [loudr.fm/api](https://loudr.fm/api).**
+
+The following specification is still valid and is hosted here for your convenience.
+
+-------
+
 To meet the expanding needs of clients, we are developing a RESTful, RAML documented
 version of our API.
 
-The fundamental structures are similar to the [v1 API](requests.md).
+The fundamental structures are similar to the [v1 API](requests-v1.md).
 
-**Submitting Requests is still only possible via v1.** [See here.](requests.md#making-a-request)
+**Submitting Requests is still only possible via v1.** [See here.](requests-v1.md#making-a-request)
 
 **Clients may pull sound recordings, using one of the following two strategies**:
 
@@ -67,7 +73,7 @@ This path is provided from the queries in `rel["canonical"] == "/api/client/soun
 One or more license requests are embodied in a sound recording.
 Multiple requests for one sound recording via the request structure.
 
-See [Making a Request](requests.md#making-a-request).
+See [Making a Request](requests-v1.md#making-a-request).
 
 **For a full example of a returned sound recording resource, [see the example at the end of this document](version2.md#example-sound-recording).**
 

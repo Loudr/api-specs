@@ -1,4 +1,8 @@
-_this document will always live at (https://github.com/Loudr/api-specs/blob/master/usage-reports.md)_
+**Loudr's partner integration documentation has moved to [loudr.fm/api](https://loudr.fm/api#usage-reporting).**
+
+The usage report specification has not changed, and what reads below corresponds directly with the information presented on our website.
+
+-------
 
 # Delivering Usage Reports
 

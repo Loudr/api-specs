@@ -1,5 +1,7 @@
 This document describes how to make requests via the "v1 API" that shipped for early Loudr partners.
-For new integrations, please see Loudr's Web API documentation at https://loudr.fm/api.
+For new integrations, please see Loudr's Web API documentation at [https://loudr.fm/api](https://loudr.fm/api).
+
+Although this format is not the most [current release](https://loudr.fm/api), Loudr has no plans to discontinue support for these specifications.
 
 # Making a Request
 
