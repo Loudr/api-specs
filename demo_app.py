@@ -31,7 +31,7 @@ payload = {
     }
 }
 
-# Use your client access token as the query-string argument, "secret".
+# Use your client access token as the query-string argument "secret".
 response = requests.put(LOUDR_BASE+"/api/client/sound_recording?secret="+SECRET,
     json.dumps(payload),
     headers={"content_type":"application/json"})
@@ -48,6 +48,7 @@ sound_recording_uri = sound_recording['uri']
 sound_recording_canonical = sound_recording['rel']['canonical']
 
 # The same URI may be built: "/api/client/sound_recording/%s/%s?secret=%s" % (client_id, vendor_id, secret)
+# e.g. /api/client/sound_recording/aBcDeF/USE10004-dpd?secret=client-access-token
 response = requests.get(LOUDR_BASE+sound_recording_canonical+"?secret="+SECRET)
 
 # Assert the response status when retrieving an existing sound recording.
@@ -107,7 +108,7 @@ payload = {
     }]
 }
 
-# Update a recording by sending a POST request to the recordings canonical link.
+# Update a recording by sending a POST request to the recording's canonical link.
 response = requests.post(LOUDR_BASE+sound_recording_canonical+"?secret="+SECRET,
     json.dumps(payload),
     headers={"content_type":"application/json"})
