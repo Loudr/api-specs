@@ -1,25 +1,25 @@
 {
-  "isrc": "USY281604079",
-  "title": "Timeless Pursuit",
-  "artist": "Amanda Appiarius",
-  "length": 156,
-  "album": "Masquerada: Songs and Shadows",
-  "label": "Josh Whelchel",
-  "upc": "191061946120",
-  "licenses": {
-    "stream": "continuous"
+  "license_config": {
+    "dpd": -1
   },
-  "compositions": [
-    {
-      "title": "Timeless Pursuit",
-      "artist": "Amanda Appiarius",
-      "author": ["Josh Whelchel", "Amanda Appiarius"],
-      "album": "Masquerada: Songs and Shadows",
-      "source": "Masquerada"
-    }
+  "license_territories": [
+    "US"
   ],
-  "metadata": {
-    "publisher": "Lost Kakapo Songs"
+  "recording": {
+    "album": "Hero of Time",
+    "artist": "Eric Buchholz",
+    "isrc": "QZ6K41600179",
+    "label": "Materia Collective",
+    "length": 209,
+    "release_date": "2017-03-09",
+    "title": "The Legendary Blade",
+    "vendor_id": "QZ6K41600179-dpd-a"
   },
-  "vendor_id": "ABC000000001"
+  "requests": [
+    {
+      "composer": "Koji Kando",
+      "source": "The Legend of Zelda: Ocarina of Time",
+      "title": "Temple of Time"
+    }
+  ]
 }

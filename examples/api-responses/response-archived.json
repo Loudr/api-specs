@@ -1,0 +1,83 @@
+{
+  "client": "creator/NBAn8", 
+  "earliest_clearance_at": null, 
+  "fulfillment": null, 
+  "fulfillment_status": {
+    "allowed_expense": {
+      "name": "NONE", 
+      "value": 0
+    }, 
+    "license_fulfilled": false, 
+    "license_fulfilled_at": null, 
+    "maximum_expense": 0
+  }, 
+  "is_hard_rejection": false, 
+  "is_public_domain": false, 
+  "is_rejection": false, 
+  "license_config": {
+    "dpd": -1
+  }, 
+  "license_fulfilled_at": null, 
+  "license_kind": "client request", 
+  "license_requested_at": "2017-09-26T22:37:54.519777+00:00", 
+  "license_status": 6, 
+  "license_status_str": "Archived", 
+  "licensor": null, 
+  "matched_compositions": [], 
+  "payment_complete": false, 
+  "payment_initiated": null, 
+  "recording": {
+    "album": "Hero of Time", 
+    "artist": [
+      "Eric Buchholz"
+    ], 
+    "isrc": "QZ6K41600179", 
+    "label": "Materia Collective", 
+    "length": 209, 
+    "licensor": null, 
+    "release_date": "2017-03-09T00:00:00", 
+    "title": "The Legendary Blade", 
+    "upc": null, 
+    "vendor_album_id": null, 
+    "vendor_id": "QZ6K41600179-dpd-a"
+  }, 
+  "rejections": [], 
+  "rel": {
+    "canonical": "/api/client/sound_recording/NBAn8/QZ6K41600179-dpd-a"
+  }, 
+  "renewal_complete": null, 
+  "renewal_failed": null, 
+  "renewal_of": null, 
+  "requests": [
+    {
+      "expense": {
+        "name": "NONE", 
+        "value": 0
+      }, 
+      "provided_research": {
+        "album": [], 
+        "artist": [], 
+        "author": [], 
+        "composer": [
+          "Koji Kando"
+        ], 
+        "composition_index": 0, 
+        "iswc": null, 
+        "link": [], 
+        "notes": null, 
+        "source": [
+          "The Legend of Zelda: Ocarina of Time"
+        ], 
+        "suggested_composition": "", 
+        "title": [
+          "Temple of Time"
+        ]
+      }
+    }
+  ], 
+  "royalty_rates": {
+    "dpd": "0.091"
+  }, 
+  "updated_at": "2017-09-26T22:37:54.897703+00:00", 
+  "uri": "sound_recording/creator/NBAn8--QZ6K41600179-dpd-a"
+}

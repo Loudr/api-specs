@@ -1,0 +1,91 @@
+{
+  "client": "creator/Nnsr4", 
+  "earliest_clearance_at": null, 
+  "fulfillment": null, 
+  "fulfillment_status": {
+    "allowed_expense": {
+      "name": "NONE", 
+      "value": 0
+    }, 
+    "license_fulfilled": false, 
+    "license_fulfilled_at": null, 
+    "maximum_expense": 0
+  }, 
+  "is_hard_rejection": true, 
+  "is_public_domain": false, 
+  "is_rejection": true, 
+  "license_config": {
+    "dpd": -1
+  }, 
+  "license_fulfilled_at": null, 
+  "license_kind": "client request", 
+  "license_requested_at": "2017-09-26T22:38:04.968044+00:00", 
+  "license_status": 4, 
+  "license_status_str": "Rejected", 
+  "licensor": null, 
+  "matched_compositions": [], 
+  "payment_complete": false, 
+  "payment_initiated": null, 
+  "recording": {
+    "album": "Hero of Time", 
+    "artist": [
+      "Eric Buchholz"
+    ], 
+    "isrc": "QZ6K41600179", 
+    "label": "Materia Collective", 
+    "length": 209, 
+    "licensor": null, 
+    "release_date": "2017-03-09T00:00:00", 
+    "title": "The Legendary Blade", 
+    "upc": null, 
+    "vendor_album_id": null, 
+    "vendor_id": "QZ6K41600179-dpd-a"
+  }, 
+  "rejections": [
+    {
+      "composition_index": null, 
+      "is_hard_rejection": true, 
+      "notes": null, 
+      "reason": "This recording contains a non-musical work, and is not eligible for licensing. Please do NOT re-submit this work.", 
+      "reason_id": 6
+    }
+  ], 
+  "rel": {
+    "canonical": "/api/client/sound_recording/Nnsr4/QZ6K41600179-dpd-a"
+  }, 
+  "renewal_complete": null, 
+  "renewal_failed": null, 
+  "renewal_of": null, 
+  "requests": [
+    {
+      "expense": {
+        "name": "NONE", 
+        "value": 0
+      }, 
+      "provided_research": {
+        "album": [], 
+        "artist": [], 
+        "author": [], 
+        "composer": [
+          "Koji Kando"
+        ], 
+        "composition_index": 0, 
+        "iswc": null, 
+        "link": [], 
+        "notes": null, 
+        "source": [
+          "The Legend of Zelda: Ocarina of Time"
+        ], 
+        "suggested_composition": "", 
+        "title": [
+          "Temple of Time"
+        ]
+      }
+    }
+  ], 
+  "royalty_rates": {
+    "dpd": "0.091"
+  }, 
+  "updated_at": "2017-09-26T22:38:05.340569+00:00", 
+  "uri": "sound_recording/creator/Nnsr4--QZ6K41600179-dpd-a"
+}

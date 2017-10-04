@@ -1,0 +1,25 @@
+{
+  "isrc": "USY281604079",
+  "title": "Timeless Pursuit",
+  "artist": "Amanda Appiarius",
+  "length": 156,
+  "album": "Masquerada: Songs and Shadows",
+  "label": "Josh Whelchel",
+  "upc": "191061946120",
+  "licenses": {
+    "stream": "continuous"
+  },
+  "compositions": [
+    {
+      "title": "Timeless Pursuit",
+      "artist": "Amanda Appiarius",
+      "author": ["Josh Whelchel", "Amanda Appiarius"],
+      "album": "Masquerada: Songs and Shadows",
+      "source": "Masquerada"
+    }
+  ],
+  "metadata": {
+    "publisher": "Lost Kakapo Songs"
+  },
+  "vendor_id": "ABC000000001"
+}

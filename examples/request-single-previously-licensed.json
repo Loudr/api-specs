@@ -1,18 +1,32 @@
 {
-  "isrc": "USE7D1300175",
-  "title": "Pa Que Sigan Hable Y Hable",
-  "artist": "Otro Nivel",
-  "length": 213,
-  "album": "Prendiendo El Motor",
-  "label": "Del Records",
-  "upc": "40232035791",
-  "licenses": {
-    "stream": "continuous"
+  "license_config": {
+    "dpd": -1
   },
+  "license_territories": [
+    "US"
+  ],
   "previous_license": {
     "license_id": "123456789",
     "partner": "Licensing Agent",
-    "publisher_ids": ["P1234"],
+    "publisher_ids": [
+      "P1234"
+    ]
   },
-  "vendor_id": "D90123X000001ABODP"
+  "recording": {
+    "album": "Hero of Time",
+    "artist": "Eric Buchholz",
+    "isrc": "QZ6K41600179",
+    "label": "Materia Collective",
+    "length": 209,
+    "release_date": "2017-03-09",
+    "title": "The Legendary Blade",
+    "vendor_id": "QZ6K41600179-dpd-a"
+  },
+  "requests": [
+    {
+      "composer": "Koji Kando",
+      "source": "The Legend of Zelda: Ocarina of Time",
+      "title": "Temple of Time"
+    }
+  ]
 }
