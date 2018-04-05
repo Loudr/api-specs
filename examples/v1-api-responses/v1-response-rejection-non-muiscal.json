@@ -31,7 +31,7 @@
             "release_date": null,
             "rejection_status_messages": [
                 {
-                    "is_hard_rejection": false,
+                    "is_hard_rejection": true,
                     "message": "Other (See attached notes)",
                     "notes": "Non-musical work",
                     "reason": 1
